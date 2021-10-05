@@ -1,5 +1,10 @@
 <?php add_action("init", function () {
     add_theme_support("post-thumbnails");
+
+    /* メニューを追加 */
+    register_nav_menus([
+        "global_menu" => "グローバルナビゲーション",
+    ]);
 });
 
 
